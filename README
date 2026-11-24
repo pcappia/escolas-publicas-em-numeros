@@ -1,0 +1,103 @@
+# Escolas Públicas em Números: banco de dados aberto da infraestrutura escolar (Censo Escolar 2025\)
+
+**Integrantes:** Pâmela Cappia Torres; Rafaela Ariana
+
+Projeto de Curricularização da Extensão · CST em Banco de Dados, 5º semestre · Laboratório de Desenvolvimento de Banco de Dados V · Profa. Mariana Rodrigues Santesso · Modalidade: Parceiro Aberto (Modelo Universal)
+
+## O que é
+
+Os dados do Censo Escolar (INEP) são públicos, mas vêm em um arquivo grande e cheio de códigos. Este projeto organizou a tabela de escolas em um **banco de dados** com **138.086 escolas públicas em atividade em 2025**, acompanhado de planilhas, gráficos e manuais para que qualquer pessoa consulte a infraestrutura das escolas: água, energia, esgoto, banheiro adaptado, biblioteca, laboratório de informática, quadra, acessibilidade e internet.
+
+## Comece por aqui
+
+| Você quer... | Abra |
+| :---- | :---- |
+| Ver gráficos e indicadores por região, estado e município | `visualizacao/painel_indicadores_escolas_2025.xlsx` |
+| Procurar uma escola específica | `visualizacao/consulta_escolas_2025.xlsx` |
+| Fazer perguntas ao banco sem instalar servidor | `banco/escolas2025.db` no [DB Browser for SQLite](https://sqlitebrowser.org/), aba *Executar SQL*; perguntas prontas em `banco/sql/07_consultas_exemplo.sql` |
+| Criar o banco no PostgreSQL | Veja "Reproduzir o banco" abaixo |
+| Usar os gráficos em reportagens e aulas | `visualizacao/graficos/` |
+
+## Estrutura do repositório
+
+```
+dados/           CSV tratado (138.086 linhas, 37 colunas) e dicionário de variáveis
+etl/             etl_escolas_2025.py: extração, filtro, padronização e validação
+banco/sql/       scripts 00 a 07: estrutura, carga, índices, views, testes e consultas de exemplo
+banco/           escolas2025.db (SQLite populado), dump do PostgreSQL e construir_sqlite.py
+banco/evidencias/ resultados dos 35 testes de integridade e das consultas de exemplo
+docs/diagramas/  modelo conceitual (DER) e modelo lógico em PNG, SVG e DOT
+visualizacao/    painel e planilha de consulta em Excel; 6 gráficos em PNG
+divulgacao/      texto pronto para publicação
+```
+
+## O banco de dados
+
+- 14 tabelas na terceira forma normal, 8 views de consulta pronta e 6 índices.  
+- Geografia: `regiao` → `uf` → `municipio` → `escola`.  
+- Classificações: rede, dependência administrativa, localização, localização diferenciada e situação de funcionamento.  
+- Infraestrutura (1 para 1 com a escola): `escola_saneamento`, `escola_dependencias_fisicas`, `escola_acessibilidade`, `escola_tecnologia`.  
+- Dicionário de dados dentro do próprio banco (`dicionario_dados`).  
+- Views: `vw_escola_completa`, `vw_indicadores_brasil`, `_regiao`, `_uf`, `_municipio`, `_localizacao`, `_dependencia` e `vw_escolas_sem_saneamento_basico`.
+
+Os diagramas estão em `docs/diagramas/der_conceitual.png` e `docs/diagramas/modelo_logico.png`.
+
+## Reproduzir o banco
+
+**PostgreSQL 16** (a partir da pasta raiz do projeto):
+
+```
+createdb escolas2025
+psql -d escolas2025 -v ON_ERROR_STOP=1 -f banco/sql/00_executar_tudo.sql
+```
+
+Isso cria a estrutura, carrega o CSV, cria índices e views e executa os testes de integridade. Também é possível restaurar o banco pronto com `escolas2025_postgres_dump.sql.gz`.
+
+**SQLite** (sem servidor):
+
+```
+python banco/construir_sqlite.py
+```
+
+**Refazer o tratamento a partir do arquivo do INEP:**
+
+```
+pip install pandas
+python etl/etl_escolas_2025.py Tabela_Escola_2025_V2.csv dados/escolas_publicas_ativas_2025_tratada.csv
+```
+
+(Se o arquivo de origem estiver em UTF-8, acrescente `--encoding utf-8`.)
+
+## Exemplos de perguntas que o banco responde
+
+```sql
+-- Estados com mais escolas sem esgoto
+SELECT sg_uf, no_uf, pct_sem_esgoto FROM vw_indicadores_uf ORDER BY pct_sem_esgoto DESC LIMIT 10;
+
+-- Urbana x rural: internet e laboratório de informática
+SELECT ds_localizacao, pct_internet, pct_internet_alunos, pct_lab_informatica FROM vw_indicadores_localizacao;
+```
+
+## Alguns resultados (2025)
+
+- 93,1% das escolas públicas têm internet, mas só 42,5% a oferecem aos alunos.  
+- Norte: 73,3% das escolas com internet e 43,7% sem nenhum recurso de acessibilidade. Sul: 99,5% e 8,5%.  
+- Escolas rurais: 8,6% sem esgotamento sanitário; urbanas: 0,3%.  
+- Terras indígenas: 76,3% das escolas sem recurso de acessibilidade.
+
+## Cuidados ao usar os dados
+
+- Os dados são declarados pelas escolas e não foram auditados por este projeto.  
+- Ter um recurso não significa que ele funcione ou seja suficiente.  
+- Os números retratam o ano de 2025\.  
+- Nas escolas sem internet, o campo `in_banda_larga` é vazio (não se aplica); não é zero.
+
+## Fonte e créditos
+
+- **Fonte dos dados:** INEP, Censo da Educação Básica 2025, Tabela de Escola (dados abertos). Data da coleta: 02/10/2026. Consulte os termos de uso do INEP ao reutilizar os dados originais.  
+- **Tratamento, modelagem, banco, indicadores e materiais:** grupo do projeto.  
+- Ao divulgar resultados, cite: *INEP, Censo Escolar 2025, organizado pelo projeto "Escolas Públicas em Números"*.
+
+## Dúvidas e sugestões
+
+Contato do grupo: [pamelacappia05@gmail.com](mailto:pamelacappia05@gmail.com) , [rafaelaaos16@gmail.com](mailto:rafaelaaos16@gmail.com)
