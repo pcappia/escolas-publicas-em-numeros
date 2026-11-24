@@ -1,0 +1,346 @@
+  no_regiao   | qtd_escolas 
+--------------+-------------
+ Nordeste     |       49207
+ Sudeste      |       40781
+ Norte        |       20331
+ Sul          |       19855
+ Centro-Oeste |        7912
+(5 rows)
+
+ sg_uf |   no_uf   | qtd_escolas | pct_sem_esgoto 
+-------+-----------+-------------+----------------
+ AC    | Acre      |        1484 |           37.1
+ AM    | Amazonas  |        5158 |           26.5
+ RR    | Roraima   |         864 |           21.1
+ MA    | Maranhão  |       10080 |            8.2
+ AP    | Amapá     |         786 |            7.0
+ PA    | Pará      |        9631 |            7.0
+ PI    | Piauí     |        3557 |            4.8
+ RO    | Rondônia  |        1026 |            3.9
+ BA    | Bahia     |       13366 |            2.2
+ TO    | Tocantins |        1382 |            2.0
+(10 rows)
+
+ ds_localizacao | qtd_escolas | pct_internet | pct_internet_alunos | pct_lab_informatica 
+----------------+-------------+--------------+---------------------+---------------------
+ Rural          |       50093 |         82.8 |                30.1 |                11.5
+ Urbana         |       87993 |         99.0 |                49.6 |                37.8
+(2 rows)
+
+  no_regiao   | pct_sem_acessibilidade | pct_rampas | pct_banheiro_acessivel 
+--------------+------------------------+------------+------------------------
+ Norte        |                   43.7 |       41.8 |                   35.0
+ Nordeste     |                   24.4 |       63.6 |                   47.7
+ Sudeste      |                   22.2 |       58.9 |                   62.9
+ Centro-Oeste |                    9.3 |       75.4 |                   76.8
+ Sul          |                    8.5 |       71.8 |                   67.2
+(5 rows)
+
+ sg_uf |       no_municipio       | escolas_sem_energia 
+-------+--------------------------+---------------------
+ AM    | São Gabriel da Cachoeira |                 180
+ RR    | Uiramutã                 |                  67
+ AC    | Sena Madureira           |                  59
+ AC    | Jordão                   |                  58
+ AC    | Santa Rosa do Purus      |                  58
+ AM    | Lábrea                   |                  53
+ AM    | Coari                    |                  51
+ AM    | Tapauá                   |                  49
+ AM    | Atalaia do Norte         |                  49
+ AC    | Feijó                    |                  48
+(10 rows)
+
+                       no_entidade                       | ds_dependencia | ds_localizacao | sem_agua | sem_energia | sem_esgoto 
+---------------------------------------------------------+----------------+----------------+----------+-------------+------------
+ ESC MUN INDIGENA ACARA POCO                             | Municipal      | Rural          |        0 |           1 |          1
+ ESC MUN INDIGENA AI WATURA                              | Municipal      | Rural          |        0 |           1 |          1
+ ESC MUN INDIGENA AI WATURA                              | Municipal      | Rural          |        0 |           1 |          1
+ ESC MUN INDIGENA AI WATURA                              | Municipal      | Rural          |        0 |           1 |          1
+ ESC MUN INDIGENA AI WATURA                              | Municipal      | Rural          |        0 |           1 |          1
+ ESC MUN INDIGENA AI WATURA                              | Municipal      | Rural          |        0 |           1 |          1
+ ESC MUN INDIGENA AI WATURA                              | Municipal      | Rural          |        0 |           1 |          1
+ ESC MUN INDIGENA AI WATURA                              | Municipal      | Rural          |        0 |           1 |          1
+ ESC MUN INDIGENA AI WATURA                              | Municipal      | Rural          |        0 |           1 |          1
+ ESC MUN INDIGENA AI WATURA                              | Municipal      | Rural          |        0 |           1 |          1
+ ESC MUN INDIGENA AI WATURA                              | Municipal      | Rural          |        0 |           1 |          1
+ ESC MUN INDIGENA AI WATURA                              | Municipal      | Rural          |        0 |           1 |          1
+ ESC MUN INDIGENA AI WATURA                              | Municipal      | Rural          |        0 |           1 |          1
+ ESC MUN INDIGENA AMEPERI PORA                           | Municipal      | Rural          |        0 |           1 |          1
+ ESC MUN INDIGENA AMERICA                                | Municipal      | Rural          |        0 |           1 |          1
+ ESC MUN INDIGENA AMILTON B GADELHA                      | Municipal      | Rural          |        0 |           1 |          1
+ ESC MUN INDIGENA BAASSEBO                               | Municipal      | Rural          |        0 |           1 |          1
+ ESC MUN INDIGENA BANIWA PARRATANA                       | Municipal      | Rural          |        0 |           1 |          1
+ ESC MUN INDIGENA BANIWA PARRATANA                       | Municipal      | Rural          |        0 |           1 |          1
+ ESC MUN INDIGENA BARE NAPIRIKURY                        | Municipal      | Rural          |        0 |           1 |          1
+ ESC MUN INDIGENA BARE WARI                              | Municipal      | Rural          |        0 |           1 |          1
+ ESC MUN INDIGENA BARE WARI                              | Municipal      | Rural          |        0 |           1 |          1
+ ESC MUN INDIGENA BARE WARI                              | Municipal      | Rural          |        0 |           1 |          1
+ ESC MUN INDIGENA BARE WARI                              | Municipal      | Rural          |        0 |           1 |          1
+ ESC MUN INDIGENA BARE WARI                              | Municipal      | Rural          |        0 |           0 |          1
+ ESC MUN INDIGENA BARE WARI                              | Municipal      | Rural          |        0 |           1 |          1
+ ESC MUN INDIGENA BARE WARI                              | Municipal      | Rural          |        0 |           1 |          1
+ ESC MUN INDIGENA BARE WARI                              | Municipal      | Rural          |        0 |           1 |          1
+ ESC MUN INDIGENA BARIPHI                                | Municipal      | Rural          |        0 |           0 |          1
+ ESC MUN INDIGENA BERARI                                 | Municipal      | Rural          |        0 |           1 |          1
+ ESC MUN INDIGENA CABARI                                 | Municipal      | Rural          |        0 |           1 |          1
+ ESC MUN INDIGENA CAMARAO                                | Municipal      | Rural          |        0 |           1 |          1
+ ESC MUN INDIGENA CRISTO LIBERTADOR                      | Municipal      | Rural          |        0 |           1 |          1
+ ESC MUN INDIGENA CUMATI                                 | Municipal      | Rural          |        0 |           1 |          1
+ ESC MUN INDIGENA CUNURI                                 | Municipal      | Rural          |        0 |           1 |          1
+ ESC MUN INDIGENA DE EDUCACAO INFANTIL ASSUNCAO DO ICANA | Municipal      | Rural          |        0 |           1 |          1
+ ESC MUN INDIGENA DEH-YAAM                               | Municipal      | Rural          |        0 |           1 |          1
+ ESC MUN INDIGENA DEUS CONOSCO                           | Municipal      | Rural          |        0 |           1 |          1
+ ESC MUN INDIGENA DEUS ME DEU                            | Municipal      | Rural          |        0 |           1 |          1
+ ESC MUN INDIGENA DEUS ME DEU                            | Municipal      | Rural          |        0 |           1 |          1
+ ESC MUN INDIGENA DEUS PROVERA                           | Municipal      | Rural          |        0 |           1 |          1
+ ESC MUN INDIGENA DIDIIT                                 | Municipal      | Rural          |        0 |           1 |          1
+ ESC MUN INDIGENA DOM BOSCO                              | Municipal      | Rural          |        0 |           1 |          1
+ ESC MUN INDIGENA DOM BOSCO                              | Municipal      | Rural          |        0 |           1 |          1
+ ESC MUN INDIGENA DOM BOSCO                              | Municipal      | Rural          |        0 |           1 |          1
+ ESC MUN INDIGENA DOM JOAO MARCHESI                      | Municipal      | Rural          |        0 |           1 |          1
+ ESC MUN INDIGENA DOM JOSE SONG                          | Municipal      | Rural          |        0 |           0 |          1
+ ESC MUN INDIGENA DOM PEDRO II                           | Municipal      | Rural          |        0 |           1 |          1
+ ESC MUN INDIGENA DOM PEDRO MASSA                        | Municipal      | Rural          |        0 |           1 |          1
+ ESC MUN INDIGENA DOMINGOS SAVIO                         | Municipal      | Rural          |        0 |           1 |          1
+ ESC MUN INDIGENA DOMINGOS SAVIO                         | Municipal      | Rural          |        0 |           1 |          1
+ ESC MUN INDIGENA DOOKOLHIPANI                           | Municipal      | Rural          |        0 |           1 |          1
+ ESC MUN INDIGENA DUQUE ESTRADA                          | Municipal      | Rural          |        0 |           1 |          1
+ ESC MUN INDIGENA DURAKA KAPUAMU                         | Municipal      | Rural          |        0 |           0 |          1
+ ESC MUN INDIGENA DZAAKAPIARO                            | Municipal      | Rural          |        0 |           1 |          1
+ ESC MUN INDIGENA EBENEZER                               | Municipal      | Rural          |        0 |           1 |          1
+ ESC MUN INDIGENA EBENEZER                               | Municipal      | Rural          |        0 |           1 |          1
+ ESC MUN INDIGENA EDUCACAO INFANTIL DOZE TRIBOS          | Municipal      | Rural          |        0 |           1 |          1
+ ESC MUN INDIGENA EENAWI                                 | Municipal      | Rural          |        0 |           1 |          1
+ ESC MUN INDIGENA EIBC                                   | Municipal      | Rural          |        0 |           1 |          1
+ ESC MUN INDIGENA ENAWI                                  | Municipal      | Rural          |        0 |           1 |          1
+ ESC MUN INDIGENA ENU IRINE IDAKINI TARIANA              | Municipal      | Rural          |        0 |           0 |          1
+ ESC MUN INDIGENA ENU IRINE IDAKINI TARIANA              | Municipal      | Rural          |        0 |           1 |          1
+ ESC MUN INDIGENA ENU IRINE IDAKINI TARIANA              | Municipal      | Rural          |        0 |           1 |          1
+ ESC MUN INDIGENA ENU YUMAKINE PAMURI MAHSA              | Municipal      | Rural          |        0 |           1 |          1
+ ESC MUN INDIGENA ENU YUMAKINE PAMURI MAHSA              | Municipal      | Rural          |        0 |           1 |          1
+ ESC MUN INDIGENA ENU YUMAKINE PAMURI MAHSA              | Municipal      | Rural          |        0 |           1 |          1
+ ESC MUN INDIGENA ENU YUMAKINE PAMURI MAHSA              | Municipal      | Rural          |        0 |           1 |          1
+ ESC MUN INDIGENA FLORESTA                               | Municipal      | Rural          |        0 |           1 |          1
+ ESC MUN INDIGENA HERIENI                                | Municipal      | Rural          |        0 |           1 |          1
+ ESC MUN INDIGENA HERIKANIRI                             | Municipal      | Rural          |        0 |           1 |          1
+ ESC MUN INDIGENA HOROINA                                | Municipal      | Rural          |        0 |           1 |          1
+ ESC MUN INDIGENA IMACULADA CONCEICAO                    | Municipal      | Rural          |        0 |           1 |          1
+ ESC MUN INDIGENA INAJATUBA                              | Municipal      | Rural          |        0 |           1 |          1
+ ESC MUN INDIGENA INDIGENA AYANA                         | Municipal      | Rural          |        0 |           1 |          1
+ ESC MUN INDIGENA INFANTIL TAINA SURI                    | Municipal      | Rural          |        0 |           0 |          1
+ ESC MUN INDIGENA IRMA EDILUCIA                          | Municipal      | Rural          |        0 |           1 |          1
+ ESC MUN INDIGENA JERUSALEM                              | Municipal      | Rural          |        0 |           0 |          1
+ ESC MUN INDIGENA JOANA MADEIRA                          | Municipal      | Rural          |        0 |           1 |          1
+ ESC MUN INDIGENA JOSE FILHO                             | Municipal      | Rural          |        0 |           1 |          1
+ ESC MUN INDIGENA JOSE MATIAS                            | Municipal      | Rural          |        0 |           1 |          1
+ ESC MUN INDIGENA JOSE Mª GONCALVES                      | Municipal      | Rural          |        0 |           1 |          1
+ ESC MUN INDIGENA KALIDZAMAI                             | Municipal      | Rural          |        0 |           1 |          1
+ ESC MUN INDIGENA KISIBI YUPURI BUU                      | Municipal      | Rural          |        0 |           1 |          1
+ ESC MUN INDIGENA KUMUNO WUU                             | Municipal      | Rural          |        0 |           1 |          1
+ ESC MUN INDIGENA KUMUNO WUU                             | Municipal      | Rural          |        0 |           1 |          1
+ ESC MUN INDIGENA KUMUNO WUU                             | Municipal      | Rural          |        0 |           1 |          1
+ ESC MUN INDIGENA KUMUNO WUU                             | Municipal      | Rural          |        0 |           1 |          1
+ ESC MUN INDIGENA KURICA                                 | Municipal      | Rural          |        0 |           1 |          1
+ ESC MUN INDIGENA KURUKUI WATURA                         | Municipal      | Rural          |        0 |           1 |          1
+ ESC MUN INDIGENA LINDOLFO BERNARDO                      | Municipal      | Rural          |        0 |           1 |          1
+ ESC MUN INDIGENA MAADZERO                               | Municipal      | Rural          |        0 |           1 |          1
+ ESC MUN INDIGENA MADRE MAZZARELLO                       | Municipal      | Rural          |        0 |           1 |          1
+ ESC MUN INDIGENA MADRE MAZZARELO                        | Municipal      | Rural          |        0 |           1 |          1
+ ESC MUN INDIGENA MATAPI                                 | Municipal      | Rural          |        0 |           1 |          1
+ ESC MUN INDIGENA MENINO DE DEUS                         | Municipal      | Rural          |        0 |           1 |          1
+ ESC MUN INDIGENA MENINO JESUS                           | Municipal      | Rural          |        0 |           1 |          1
+ ESC MUN INDIGENA MIGUEL MAGONE                          | Municipal      | Rural          |        0 |           1 |          1
+ ESC MUN INDIGENA MOHOY KA                               | Municipal      | Rural          |        0 |           1 |          1
+ ESC MUN INDIGENA MOLIWENI                               | Municipal      | Rural          |        0 |           1 |          1
+ ESC MUN INDIGENA MOOLHIWENI II                          | Municipal      | Rural          |        0 |           1 |          1
+ ESC MUN INDIGENA N SRA AUXILIADORA                      | Municipal      | Rural          |        0 |           1 |          1
+ ESC MUN INDIGENA NAPIRURLI                              | Municipal      | Rural          |        0 |           1 |          1
+ ESC MUN INDIGENA NAZARE                                 | Municipal      | Rural          |        0 |           1 |          1
+ ESC MUN INDIGENA NOSSA SENHORA AUXILIADORA              | Municipal      | Rural          |        0 |           1 |          1
+ ESC MUN INDIGENA NOSSA SENHORA AUXILIADORA              | Municipal      | Rural          |        0 |           1 |          1
+ ESC MUN INDIGENA NOSSA SENHORA DAS GRACAS               | Municipal      | Rural          |        0 |           1 |          1
+ ESC MUN INDIGENA NOSSA SENHORA DAS MERCES               | Municipal      | Rural          |        0 |           1 |          1
+ ESC MUN INDIGENA NOSSA SENHORA DE ASSUNCAO              | Municipal      | Rural          |        0 |           1 |          1
+ ESC MUN INDIGENA NOSSA SENHORA DE GUADALUPE             | Municipal      | Rural          |        0 |           1 |          1
+ ESC MUN INDIGENA NOSSA SENHORA DE NAZARE                | Municipal      | Rural          |        0 |           1 |          1
+ ESC MUN INDIGENA NOVA ESPERANCA                         | Municipal      | Rural          |        0 |           1 |          1
+ ESC MUN INDIGENA NOVA VIDA                              | Municipal      | Rural          |        0 |           0 |          1
+ ESC MUN INDIGENA OMAWE                                  | Municipal      | Rural          |        0 |           1 |          1
+ ESC MUN INDIGENA PADRE ANTONIO SCOLARO                  | Municipal      | Rural          |        0 |           1 |          1
+ ESC MUN INDIGENA PADRE EZEQUIEL                         | Municipal      | Rural          |        0 |           1 |          1
+ ESC MUN INDIGENA PADRE LUIZ PACHINELLI                  | Municipal      | Rural          |        0 |           1 |          1
+ ESC MUN INDIGENA PANA-PANA                              | Municipal      | Rural          |        0 |           1 |          1
+ ESC MUN INDIGENA PANTHINOMA MAITAKANADALIKSA            | Municipal      | Rural          |        0 |           1 |          1
+ ESC MUN INDIGENA PARAUA                                 | Municipal      | Rural          |        0 |           1 |          1
+ ESC MUN INDIGENA PARINTINS                              | Municipal      | Rural          |        0 |           0 |          1
+ ESC MUN INDIGENA PASTOR JAIME                           | Municipal      | Rural          |        0 |           1 |          1
+ ESC MUN INDIGENA PEQUENO PRINCIPE                       | Municipal      | Rural          |        0 |           1 |          1
+ ESC MUN INDIGENA PUNIA                                  | Municipal      | Rural          |        0 |           1 |          1
+ ESC MUN INDIGENA PURAQUI KUARA                          | Municipal      | Rural          |        0 |           1 |          1
+ ESC MUN INDIGENA PUROMINARE                             | Municipal      | Rural          |        0 |           1 |          1
+ ESC MUN INDIGENA RUI BARBOSA                            | Municipal      | Rural          |        0 |           1 |          1
+ ESC MUN INDIGENA S DOMINGOS SAVIO                       | Municipal      | Rural          |        0 |           1 |          1
+ ESC MUN INDIGENA SAGRADO CORACAO DE JESUS               | Municipal      | Rural          |        0 |           1 |          0
+ ESC MUN INDIGENA SAGRADO CORACAO DE JESUS               | Municipal      | Rural          |        0 |           1 |          1
+ ESC MUN INDIGENA SANTA CRUZ                             | Municipal      | Rural          |        0 |           1 |          1
+ ESC MUN INDIGENA SANTA INES                             | Municipal      | Rural          |        0 |           1 |          1
+ ESC MUN INDIGENA SANTA ISABEL                           | Municipal      | Rural          |        0 |           1 |          1
+ ESC MUN INDIGENA SANTA KURUSA                           | Municipal      | Rural          |        0 |           1 |          1
+ ESC MUN INDIGENA SANTA MARIA                            | Municipal      | Rural          |        0 |           0 |          1
+ ESC MUN INDIGENA SANTA MARIA                            | Municipal      | Rural          |        0 |           0 |          1
+ ESC MUN INDIGENA SANTA MARIA GORETE                     | Municipal      | Rural          |        0 |           1 |          1
+ ESC MUN INDIGENA SANTA ROSA                             | Municipal      | Rural          |        0 |           1 |          1
+ ESC MUN INDIGENA SANTA TEREZINHA                        | Municipal      | Rural          |        0 |           1 |          1
+ ESC MUN INDIGENA SANTA TEREZINHA                        | Municipal      | Rural          |        0 |           1 |          1
+ ESC MUN INDIGENA SAO DOMINGOS SAVIO                     | Municipal      | Rural          |        0 |           1 |          1
+ ESC MUN INDIGENA SAO FELIPE                             | Municipal      | Rural          |        0 |           1 |          1
+ ESC MUN INDIGENA SAO FERNANDO                           | Municipal      | Rural          |        0 |           1 |          1
+ ESC MUN INDIGENA SAO GABRIEL                            | Municipal      | Rural          |        0 |           1 |          1
+ ESC MUN INDIGENA SAO JOAO                               | Municipal      | Rural          |        0 |           1 |          1
+ ESC MUN INDIGENA SAO JOAO                               | Municipal      | Rural          |        0 |           1 |          1
+ ESC MUN INDIGENA SAO JOAQUIM                            | Municipal      | Rural          |        0 |           1 |          1
+ ESC MUN INDIGENA SAO JOSE                               | Municipal      | Rural          |        0 |           1 |          1
+ ESC MUN INDIGENA SAO JOSE                               | Municipal      | Rural          |        0 |           0 |          1
+ ESC MUN INDIGENA SAO JOSE DE ANCHIETA                   | Municipal      | Rural          |        0 |           1 |          1
+ ESC MUN INDIGENA SAO JOSE-- KAN- SAA                    | Municipal      | Rural          |        0 |           1 |          1
+ ESC MUN INDIGENA SAO LUIZ GONZAGA                       | Municipal      | Rural          |        0 |           1 |          1
+ ESC MUN INDIGENA SAO MIGUEL                             | Municipal      | Rural          |        0 |           1 |          1
+ ESC MUN INDIGENA SAO MIGUEL                             | Municipal      | Rural          |        0 |           1 |          1
+ ESC MUN INDIGENA SAO PAULO AHKUTO                       | Municipal      | Rural          |        0 |           1 |          1
+ ESC MUN INDIGENA SAO PEDRO                              | Municipal      | Rural          |        0 |           0 |          1
+ ESC MUN INDIGENA SAO PEDRO                              | Municipal      | Rural          |        0 |           1 |          1
+ ESC MUN INDIGENA SAO TOMAS                              | Municipal      | Rural          |        0 |           1 |          1
+ ESC MUN INDIGENA TEREZA VALSE                           | Municipal      | Rural          |        0 |           1 |          1
+ ESC MUN INDIGENA TERRA PRETA                            | Municipal      | Rural          |        0 |           1 |          1
+ ESC MUN INDIGENA TORAMU DIONE                           | Municipal      | Rural          |        0 |           1 |          1
+ ESC MUN INDIGENA TUKANO YUPURI                          | Municipal      | Rural          |        0 |           1 |          1
+ ESC MUN INDIGENA TUKANO YUPURI                          | Municipal      | Rural          |        0 |           1 |          1
+ ESC MUN INDIGENA TUKANO YUPURI                          | Municipal      | Rural          |        0 |           1 |          1
+ ESC MUN INDIGENA TUKANO YUPURI                          | Municipal      | Rural          |        0 |           1 |          1
+ ESC MUN INDIGENA TUKANO YUPURI                          | Municipal      | Rural          |        0 |           1 |          1
+ ESC MUN INDIGENA TUYUKA UITAPINOPONA                    | Municipal      | Rural          |        0 |           1 |          1
+ ESC MUN INDIGENA TUYUKA UITAPINOPONA                    | Municipal      | Rural          |        0 |           0 |          1
+ ESC MUN INDIGENA UAINAMBI                               | Municipal      | Rural          |        0 |           1 |          1
+ ESC MUN INDIGENA UAINAMBI                               | Municipal      | Rural          |        0 |           1 |          1
+ ESC MUN INDIGENA UMARITUBA                              | Municipal      | Rural          |        0 |           1 |          1
+ ESC MUN INDIGENA URUMUTUM LAGO                          | Municipal      | Rural          |        0 |           1 |          1
+ ESC MUN INDIGENA VILA NOVA                              | Municipal      | Rural          |        0 |           1 |          1
+ ESC MUN INDIGENA WARUA                                  | Municipal      | Rural          |        0 |           1 |          1
+ ESC MUN INDIGENA WEHSEMI                                | Municipal      | Rural          |        0 |           1 |          1
+ ESC MUN INDIGENA WOM HO                                 | Municipal      | Rural          |        0 |           1 |          1
+ ESC MUN INDIGENA YAI HI                                 | Municipal      | Rural          |        0 |           1 |          1
+ ESC MUN INDIGENA YANE ARIA                              | Municipal      | Rural          |        0 |           1 |          1
+ ESC MUN INDIGENA YAPUTARI WAA                           | Municipal      | Rural          |        0 |           1 |          1
+ ESC MUN INDIGENA YAUAWIRA                               | Municipal      | Rural          |        0 |           1 |          1
+ ESC MUN INDIGENA YAUAWIRA                               | Municipal      | Rural          |        0 |           1 |          1
+ ESC MUN INDIGENA YE PA MAHSA                            | Municipal      | Rural          |        0 |           1 |          1
+ ESC MUN INDIGENA YEPA MAHSA                             | Municipal      | Rural          |        0 |           1 |          1
+ ESC MUN INDIGENA YEPA MAHSA                             | Municipal      | Rural          |        0 |           1 |          1
+ ESC MUN INDIGENA YEPA MAHSA                             | Municipal      | Rural          |        0 |           1 |          1
+ ESC MUN INDIGENA YEPA MAHSA                             | Municipal      | Rural          |        0 |           1 |          1
+ ESC MUN INDIGENA YEPA MAHSA                             | Municipal      | Rural          |        0 |           1 |          1
+ ESC MUN INDIGENA YEPA MAHSA                             | Municipal      | Rural          |        0 |           0 |          1
+ ESC MUN INDIGENA YEPA MAHSA                             | Municipal      | Rural          |        0 |           1 |          0
+ ESC MUN INDIGENA YEPA SURI HADEY WI                     | Municipal      | Rural          |        0 |           1 |          1
+ ESC MUN NDIGENA XIBARU                                  | Municipal      | Rural          |        0 |           1 |          1
+ ESCOLA BANIWA EENO HIEPOLE                              | Municipal      | Rural          |        0 |           1 |          1
+ ESCOLA ESTADUAL DOM BOSCO                               | Estadual       | Urbana         |        1 |           0 |          0
+ ESCOLA ESTADUAL INDIGENA DUQUE DE CAXIAS                | Estadual       | Rural          |        1 |           1 |          0
+ ESCOLA ESTADUAL NOSSA SENHORA DA IMACULADA CONCEICAO    | Estadual       | Rural          |        0 |           1 |          0
+ ESCOLA ESTADUAL SAGRADO CORACAO                         | Estadual       | Rural          |        0 |           1 |          0
+ ESCOLA MUNICIPAL INDIGENA DOM BOSCO                     | Municipal      | Rural          |        0 |           0 |          1
+(197 rows)
+
+               ds_localizacao_diferenciada               | qtd_escolas | pct_internet | pct_sem_acessibilidade 
+---------------------------------------------------------+-------------+--------------+------------------------
+ A escola não está em área de localização diferenciada   |      125711 |         95.2 |                   20.4
+ Área de assentamento                                    |        4486 |         81.3 |                   42.5
+ Terra indígena                                          |        3708 |         54.5 |                   76.3
+ Comunidade quilombola                                   |        2722 |         87.7 |                   39.3
+ Área onde se localizam povos e comunidades tradicionais |        1459 |         60.8 |                   60.9
+(5 rows)
+
+ sg_uf | pct_lab_informatica | pct_computador 
+-------+---------------------+----------------
+ MG    |                45.2 |           90.2
+ RO    |                45.2 |           88.9
+ MS    |                45.1 |           95.8
+ PR    |                44.0 |           99.2
+ DF    |                43.6 |           95.7
+ SP    |                41.7 |           95.9
+ RS    |                39.8 |           93.6
+ SC    |                38.0 |           95.3
+ RJ    |                35.9 |           95.2
+ GO    |                35.5 |           96.2
+ CE    |                29.9 |           87.0
+ ES    |                28.9 |           90.8
+ RN    |                25.4 |           85.8
+ MT    |                23.2 |           92.7
+ SE    |                21.8 |           86.2
+ AL    |                21.3 |           84.4
+ PI    |                19.7 |           76.0
+ PE    |                19.5 |           81.0
+ TO    |                19.5 |           88.7
+ PB    |                19.1 |           76.7
+ AM    |                16.1 |           44.0
+ PA    |                13.1 |           59.2
+ BA    |                12.0 |           80.3
+ AP    |                11.2 |           55.6
+ RR    |                 9.7 |           52.3
+ AC    |                 8.9 |           42.7
+ MA    |                 8.1 |           54.7
+(27 rows)
+
+                   no_entidade                   |    no_municipio     | sg_uf | ds_dependencia 
+-------------------------------------------------+---------------------+-------+----------------
+ ESC SAO JOSE                                    | Cruzeiro do Sul     | AC    | Estadual
+ ESC SAO JOSE I                                  | Feijó               | AC    | Municipal
+ ESC INDIGENA INSTITUTO SAO JOSE                 | Jordão              | AC    | Municipal
+ ESC INDIGENA SAO JOSE                           | Jordão              | AC    | Municipal
+ ESC SAO JOSE I                                  | Porto Acre          | AC    | Municipal
+ ESC SAO JOSE II                                 | Porto Walter        | AC    | Municipal
+ ESC SAO JOSE                                    | Porto Walter        | AC    | Municipal
+ ESC INSTITUTO SAO JOSE                          | Rio Branco          | AC    | Estadual
+ ESC SAO JOSE II                                 | Rodrigues Alves     | AC    | Municipal
+ ESC INDIGENA SAO JOSE                           | Santa Rosa do Purus | AC    | Municipal
+ ESC SAO JOSE                                    | Sena Madureira      | AC    | Municipal
+ ESC SAO JOSE II                                 | Sena Madureira      | AC    | Municipal
+ ESC SAO JOSE IV                                 | Senador Guiomard    | AC    | Estadual
+ ESC INSTITUTO SAO JOSE                          | Tarauacá            | AC    | Estadual
+ ESC SAO JOSE                                    | Tarauacá            | AC    | Municipal
+ ESC INDIGENA SAO JOSE I                         | Tarauacá            | AC    | Estadual
+ ESC SAO JOSE                                    | Xapuri              | AC    | Estadual
+ ESCOLA MUNICIPAL SAO JOSE                       | Belo Monte          | AL    | Municipal
+ CRECHE MUNICIPAL SAO JOSE                       | Belo Monte          | AL    | Municipal
+ ESCOLA MUNICIPAL DE ENSINO FUNDAMENTAL SAO JOSE | Canapi              | AL    | Municipal
+(20 rows)
+
+ sg_uf | qtd  
+-------+------
+ PA    | 1948
+ AM    | 1611
+ MA    | 1011
+ BA    |  574
+ AC    |  422
+ MG    |  255
+ PE    |  168
+ RR    |  117
+ AP    |  111
+ PI    |   88
+ PB    |   84
+ SP    |   58
+ ES    |   53
+ AL    |   49
+ MT    |   30
+ RN    |   27
+ CE    |   25
+ RS    |   23
+ TO    |   16
+ PR    |   14
+ RJ    |    7
+ GO    |    7
+ SE    |    6
+ RO    |    4
+ SC    |    1
+(25 rows)
+

@@ -1,0 +1,43 @@
+                    teste                    | esperado | obtido | resultado 
+---------------------------------------------+----------+--------+-----------
+ A01 Escolas carregadas                      |   138086 | 138086 | OK
+ A02 Regiões                                 |        5 |      5 | OK
+ A03 UFs                                     |       27 |     27 | OK
+ A04 Municípios com escola                   |     5571 |   5571 | OK
+ A05 Variáveis no dicionário                 |       37 |     37 | OK
+ A06 Escolas federais                        |      716 |    716 | OK
+ A07 Escolas estaduais                       |    29998 |  29998 | OK
+ A08 Escolas municipais                      |   107372 | 107372 | OK
+ A09 Escolas urbanas                         |    87993 |  87993 | OK
+ A10 Escolas rurais                          |    50093 |  50093 | OK
+ A11 Saneamento 1:1 com escola               |   138086 | 138086 | OK
+ A12 Dependências físicas 1:1                |   138086 | 138086 | OK
+ A13 Acessibilidade 1:1                      |   138086 | 138086 | OK
+ A14 Tecnologia 1:1                          |   138086 | 138086 | OK
+ A15 Banda larga nula = escolas sem internet |     9472 |   9472 | OK
+ A16 Banda larga nula em escola COM internet |        0 |      0 | OK
+ A17 Escolas sem município                   |        0 |      0 | OK
+ A18 Municípios sem UF                       |        0 |      0 | OK
+ A19 UFs sem região                          |        0 |      0 | OK
+ A20 Escolas sem saneamento cadastrado       |        0 |      0 | OK
+ A21 Escolas sem tecnologia cadastrada       |        0 |      0 | OK
+ A22 vw_escola_completa = escola             |   138086 | 138086 | OK
+ A23 Soma das UFs na view                    |   138086 | 138086 | OK
+ A24 Soma dos municípios na view             |   138086 | 138086 | OK
+ A25 Soma das regiões na view                |   138086 | 138086 | OK
+ A26 % de escolas com internet (Brasil)      |     93.1 |   93.1 | OK
+(26 rows)
+
+psql:banco/sql/06_testes_integridade.sql:49: NOTICE:  B01 OK: município inexistente rejeitado (FK)
+psql:banco/sql/06_testes_integridade.sql:57: NOTICE:  B02 OK: CO_ENTIDADE duplicado rejeitado (PK)
+psql:banco/sql/06_testes_integridade.sql:65: NOTICE:  B03 OK: valor 2 em indicador 0/1 rejeitado (CHECK)
+psql:banco/sql/06_testes_integridade.sql:73: NOTICE:  B04 OK: contradição água x sem água rejeitada (CHECK)
+psql:banco/sql/06_testes_integridade.sql:81: NOTICE:  B05 OK: banda larga sem internet rejeitada (CHECK)
+psql:banco/sql/06_testes_integridade.sql:89: NOTICE:  B06 OK: banheiro acessível sem banheiro rejeitado (CHECK)
+psql:banco/sql/06_testes_integridade.sql:97: NOTICE:  B07 OK: código de município incompatível com a UF rejeitado (CHECK)
+psql:banco/sql/06_testes_integridade.sql:105: NOTICE:  B08 OK: exclusão de UF com municípios bloqueada (FK)
+                     teste                      | esperado | obtido | resultado 
+------------------------------------------------+----------+--------+-----------
+ B09 Cascata: filhos órfãos após excluir escola |        0 |      0 | OK
+(1 row)
+
